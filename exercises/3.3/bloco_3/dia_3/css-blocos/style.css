@@ -26,8 +26,8 @@
     margin: 30px;
   }
 
-  .border ,
-  caixa width-and-height padding margin border {
+  .border , 
+  caixa width-and-height padding margin border{
   /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
-border-color: solid 5px black;
+border-color: 5px rgb(7, 7, 7);
   }
