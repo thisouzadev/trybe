@@ -12,9 +12,50 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 //Exercício 1
-document.getElementsByTagName("p)[0].innerText = "meus melhores dias na trybe escola de desenvolvimento software";
+function mudeTexto() {
+  document.getElementsByTagName('p')[0].innerText = "meus melhores dias na trybe escola de desenvolvimento software";
+}
+mudeTexto();
 //Exercício 2
-function changeSquareToGreen() {
+function mudeCorQuadradoAmarelo() {
+  document.getElementsByClassName('main-content')[0].style.background = "rgb(76,164,109)";
+}
+mudeCorQuadradoAmarelo();
+//Exercício 3
+function mudeCorQuadradoVermelho() {
+  document.getElementsByClassName('center-content')[0].style.background = "rgb(255,255,255)";
+}
+mudeCorQuadradoVermelho();
+
+//Exercício 4
+function corrigiTexto() {
+document.getElementsByTagName('h1')[0].innerHTML = "Exercício 5.1 - JavaScript";
+}
+corrigiTexto();
+
+//Exercício 5
+function ModificarParaMaiusculo() {
+  let paragraph = document.getElementsByTagName('p')[0];
+  paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+}
+ModificarParaMaiusculo();
+//Exercício 6
+function todasAsTags() {
+  let paragraph = document.getElementsByTagName('p');
+  for (let index = 0; index < paragraph.length; index++) {
+    console.log(paragraph[index].innerHTML);
+  }
+};
+todasAsTags();
+
+
+
+
+
+
+
+
+/* function changeSquareToGreen() {
   let squareYellow = document.getElementsByClassName('main-content')[0];
   squareYellow.style.background = "rgb(76,164,109)";
 }
@@ -44,4 +85,4 @@ function showParagraphs() {
     console.log(paragraphs[index].innerHTML);
   }
 }
-showParagraphs();
+showParagraphs(); */
