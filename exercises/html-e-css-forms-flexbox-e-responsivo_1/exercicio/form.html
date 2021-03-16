@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="form-header">
+    <h1>formulário</h1>
+  
+  <fieldset>
+    <div class="line-content">
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" maxlength="40" required>
+    </div>
+    <div class="line-contet">
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email" maxlength="50" required>
+    </div>
+    <div class="line-content">
+      <label for="cpf">CPF: </label>
+      <input type="number" name="cpf" id="cpf" maxlength="11" required>
+    </div>
+    <div class="line-content">
+      <label for="endereco">Endereço: </label>
+      <input type="text" name="endereco" id="endereco" maxlength="200">
+    </div>
+    <div class="line-content">
+      <label for="cidade">Cidade: </label>
+      <input type="" name="cidade" id="cidade" maxlength="28">
+    </div>
+    <div class="line-content">
+      <label for="estado">Estado: </label>
+      <select name="estado" id="estado" value="" required></select>
+    </div>
+    <div class="line-content">
+      <label for="casa-apartamento">Tipo de imóvel: </label>
+      <input type="radio" name="casa-apartamento" id="casa" required><span>Casa</span>
+      <input type="radio" name="casa-apartamento" id="apartamento" required><span>Apartamento</span>
+    </div>
+  </fieldset>
+  
+
+  <fieldset>
+    <div class="line-content">
+      <label for="cv-resume">Resumo do currículo: </label>
+      <textarea name="cv-resume" id="cv-resume" maxlength="1000" cols="100" rows="20" required></textarea>
+    </div>
+    <div class="line-content">
+      <label for="cargo">Cargo: </label>
+      <textarea name="cargo" id="cargo" maxlength="40" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="line-content">
+      <label for="descricaoDoCargo">Descrição do cargo: </label>
+      <textarea name="descricaoDoCargo" id="descricaoDoCargo" maxlength="500" cols="100" rows="20" required></textarea>
+    </div>
+    <div class="line-content">
+      <label for="start-date">Data de início: </label>
+      <input type="text" class="input-data" name="start-date" value="" required>
+    </div>
+  </fieldset>
+  <button></button>
+  <section class="form-data"></section>
+</header>
+  <script src="script.js"></script>
+</body>
+
+</html>
