@@ -37,6 +37,6 @@ console.log(numeros);
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 // Seu código aqui.
-const ordenar = (a, b) => a - b;
+const ordenar = (a, b) => a + b;
 oddsAndEvens.sort(ordenar);
 console.log(oddsAndEvens);
