@@ -19,3 +19,12 @@ Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
 
 
 http://devfuria.com.br/javascript/dom-create-element/
+https://www.digitalocean.com/community/tutorials/how-to-modify-attributes-classes-and-styles-in-the-dom-pt
+
+
+className	Obtém ou define o valor de classe	element.className;
+classList.add()	Adiciona um ou mais valores de classe	element.classList.add('active');
+classList.toggle()	Liga ou desliga uma classe	element.classList.toggle('active');
+classList.contains()	Verifica se o valor de classe existe	element.classList.contains('active');
+classList.replace()	Substitui um valor de classe existente com um novo valor de classe	element.classList.replace('old', 'new');
+classList.remove()	Remove um valor de classe	element.classList.remove('active');
