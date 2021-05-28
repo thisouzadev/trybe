@@ -18,26 +18,35 @@ const ul = document.getElementById("days");
 for (index in dezDaysList) {
   const li = document.createElement('li');
   ul.appendChild(li)
-  li.innerHTML = dezDaysList[index]
+  day = dezDaysList[index];
+  li.innerHTML = day
   li.className = 'day'
-  if (dezDaysList[index] == 24)  {
+  if (day == 24)  {
     li.classList.add('holiday')
-  } else if (dezDaysList[index] == 25) {
+  } else if (day == 25) {
     li.classList.add('holiday')
-  } else if (dezDaysList[index] == 30) {
+  } else if (day == 30) {
     li.classList.add('holiday')
   }
 
-  if (dezDaysList[index] == 4) {
+  if (day == 4) {
     li.classList.add('friday')
-  } else if (dezDaysList[index] == 11) {
+  } else if (day == 11) {
     li.classList.add('friday')
-  } else if (dezDaysList[index] == 18) {
+  } else if (day == 18) {
     li.classList.add('friday')
-  } else if (dezDaysList[index] == 25) {
+  } else if (day == 25) {
     li.classList.add('friday')
   }
 }
+const holiday = 'Feriados'
+function createHolidayBTN(buttonName) {
+  const buttonContainer = document.querySelector('.buttons-container');
+  const button = document.createElement('button');
+  buttonContainer.appendChild(button);
+  button.innerHTML = buttonName
+}
+createHolidayBTN('feriados');
 
 
 
