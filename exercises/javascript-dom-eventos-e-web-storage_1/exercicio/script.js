@@ -13,37 +13,43 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 */
 //Exercício 1
 function mudeTexto() {
-  document.getElementsByTagName('p')[0].innerText = "meus melhores dias na trybe escola de desenvolvimento software";
+  const FistParagraph = document.getElementsByTagName('p')[0];
+  FistParagraph.innerHTML = 'como você se vê daqui a 2 anos';
 }
 mudeTexto();
 //Exercício 2
-function mudeCorQuadradoAmarelo() {
-  document.getElementsByClassName('main-content')[0].style.background = "rgb(76,164,109)";
+function changeSquareToGreen() {
+  const squareYellow = document.getElementsByClassName('main-content')[0];
+  squareYellow.style.background = 'rgb(76,164,109)';
 }
-mudeCorQuadradoAmarelo();
+changeSquareToGreen();
 //Exercício 3
-function mudeCorQuadradoVermelho() {
-  document.getElementsByClassName('center-content')[0].style.background = "rgb(255,255,255)";
+function changeSquareToRed() {
+  const squareRed = document.getElementsByClassName('center-content')[0];
+  squareRed.style.background = 'white'
 }
-mudeCorQuadradoVermelho();
+changeSquareToRed();
 
 //Exercício 4
 function corrigiTexto() {
-document.getElementsByTagName('h1')[0].innerHTML = "Exercício 5.1 - JavaScript";
+  const title = document.getElementsByClassName('title')[0];
+  title.innerHTML = 'Exercício 5.1 - JavaEScript.'
 }
 corrigiTexto();
 
 //Exercício 5
-function ModificarParaMaiusculo() {
-  let paragraph = document.getElementsByTagName('p')[0];
-  paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+function changeToUpperCase() {
+  for (let i = 0; i < 3; i++) {
+  const textUppercase = document.getElementsByTagName('p')[i]
+  textUppercase.innerHTML = textUppercase.innerHTML.toUpperCase();
+  }
 }
-ModificarParaMaiusculo();
+changeToUpperCase();
 //Exercício 6
 function todasAsTags() {
-  let paragraph = document.getElementsByTagName('p');
-  for (let index = 0; index < paragraph.length; index++) {
-    console.log(paragraph[index].innerHTML);
+  let view = document.getElementsByTagName('p');
+  for (let i = 0; i < view.length; i++) {
+  console.log(view[i].innerText);
   }
 };
 todasAsTags();
