@@ -118,14 +118,14 @@ changeText(dayzfriday);
 function dayMouseOver() {
   let day = document.querySelector('#days'); // ull
   day.addEventListener('mouseover', (event) => {
-event.target.style.fontSize = '30px';
-event.target.style.fontWeight = '600';
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
   })
 };
 
 function dayMouseOut() {
   let day = document.querySelector('#days'); // ul
-  day.addEventListener('mouseout', (event)=>{
+  day.addEventListener('mouseout', (event) => {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = '200';
   })
@@ -151,8 +151,8 @@ function captionColor(color) {
   myTasks.appendChild(div);
   div.setAttribute('class', 'task')
   div.style.backgroundColor = color
-} 
-captionColor("cor")
+}
+captionColor("red")
 
 // 9. Implemente uma função que adiciona um evento que, ao clicar no elemento com a 
 // tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected 
@@ -162,7 +162,7 @@ function targetSelect() {
   let tarefa = document.querySelector('.task')
   tarefa.addEventListener('click', (event) => {
 
-event.target.classList.toggle('select')
+    event.target.classList.toggle('select')
   })
 }
 targetSelect();
@@ -170,4 +170,21 @@ targetSelect();
 // 10. Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no 
 // calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
 
+setDayColor();
