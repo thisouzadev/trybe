@@ -52,7 +52,7 @@ for (index in dezDaysList) {
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 
 const buttonContainer = document.querySelector('.buttons-container');
-const holiday = 'Feriados'
+
 function createHolidayBTN(buttonName) {
   const button = document.createElement('button');
   buttonContainer.appendChild(button);
@@ -69,10 +69,10 @@ function eventClickHolidayBTN() {
   let friday = document.querySelectorAll('.holiday');
   button.addEventListener('click', () => {
     for (let index = 0; index < friday.length; index++) {
-      if (friday[index].style.backgroundColor === 'white') {
+      if (friday[index].style.backgroundColor === 'blue') {
         friday[index].style.backgroundColor = 'rgb(238, 238, 238)';
       } else {
-        friday[index].style.backgroundColor = 'white';
+        friday[index].style.backgroundColor = 'blue';
       }
     }
   })
@@ -104,6 +104,7 @@ function changeText(dayArray) {
         allFridays[i].innerHTML = 'sextou'
       } else {
         allFridays[i].innerHTML = dayArray[i];
+        //sexta.innerText = parseInt(sexta.nextSibling.innertext) - 1;
       }
     }
   })
@@ -134,8 +135,8 @@ dayMouseOver();
 dayMouseOut();
 // 7.Implemente uma função que adiciona uma tarefa personalizada ao calendário.
 function createAssignment(string) {
-  const task = document.querySelector('.tasks-container');
-  let span = document.createElement('span');
+  let task = document.querySelector('.tasks-container');
+  const span = document.createElement('span');
   task.appendChild(span).classList.add = 'my-tasks';
   span.setAttribute('class', 'my-tasks')
   span.innerHTML = string
@@ -188,3 +189,33 @@ function setDayColor() {
 };
 
 setDayColor();
+
+function addNewTask() {
+  let getInputField = document.querySelector('#task-input');
+  let addInputButton = document.querySelector('#btn-add');
+  let getTaskList = document.querySelector('.task-list');
+
+  addInputButton.addEventListener('click', function() {
+    if (getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getInputField.value;
+
+      getTaskList.appendChild(newLi);
+      getInputField.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere.');
+    }
+  })
+
+  getInputField.addEventListener('keyup', function(event) {
+    if (event.keyCode === 13 && getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getInputField.value;
+
+      getTaskList.appendChild(newLi);
+      getInputField.value = '';
+    }
+  });
+};
+
+addNewTask();
