@@ -57,6 +57,7 @@ console.log(`\n****************************************\n`);
 //Ao executar o comando console.log(allLessons) ,
 //a saída deverá ser a seguinte:
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
 console.log(allLessons);
 
 console.log(`\n****************************************\n`); 
