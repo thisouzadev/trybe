@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div>
+    <span id="text"></span>
+  </div>
+  <button id="click">click</button>
+  <script>
+    const click = document.querySelector('#click');
+    const textDisplay = document.querySelector('#text');
+
+    let clickCount = 0;
+    click.addEventListener('click', () =>
+      textDisplay.innerHTML = clickCount += 1
+    );
+  </script>
+</body>
+
+</html>
