@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 data-js='counter'></h1>
+  <button data-js='decrement'>-</button>
+  <button data-js="increment">+</button>
+  <script>
+    const counter = (state = 0, action) => {
+      switch(action.type) {
+        case 'INCREMENT': return state + 1
+        case 'DECREMENT': return state - 1
+      }
+    return state
+  }
+
+const  createStore = (reducer) => {
+  let state // undefaned
+  let subscriptions = []
+
+  const dispatch = (action) => {
+    state = reducer(state, action)
+    subscriptions.forEach((f) => f())
+  }
+
+  const subscribe = (func) => {
+    subscriptions.push(func)
+  }
+  dispatch({})
+  return {
+    getState:() => state, //retorna sempre o state
+    dispatch,
+    subscribe
+  }
+}
+  const store = createStore(counter)
+  store.subscribe(() => {
+    console.log('state:', store.getState());
+    $counter.textContent = store.getState();
+  })
+
+  const $counter = document.querySelector('[data-js="counter"]');
+  const $decrement = document.querySelector('[data-js="decrement"]');
+  const $increment = document.querySelector('[data-js="increment"]');
+$decrement.addEventListener('click', decrement)
+$increment.addEventListener('click', incriment)
+
+function decrement() {
+  store.dispatch({ type: 'DECREMENT'})
+}
+
+function incriment() {
+  store.dispatch({ type: 'INCREMENT'})
+}
+
+function render () {
+  $counter.textContent = store.getState()
+}
+store.subscribe(render)
+render()
+  </script>
+  <script src="test.js"></script>
+</body>
+</html>button data-js='decrement'>-</button>
+  <button data-js="increment">+</button>
+  <script>
+    const counter = (state = 0, action) => {
+      switch(action.type) {
+        case 'INCREMENT': return state + 1
+        case 'DECREMENT': return state - 1
+      }
+    return state
+  }
+
+const  createStore = (reducer) => {
+  let state // undefined
+  let subscriptions = []
+
+  const dispatch = (action) => {
+    state = reducer(state, action)
+    subscriptions.forEach((f) => f())
+  }
+
+  const subscribe = (func) => {
+    subscriptions.push(func)
+  }
+  dispatch({})
+  return {
+    getState:() => state, //retorna sempre o state
+    dispatch,
+    subscribe
+  }
+}
+  const store = createStore(counter)
+  store.subscribe(() => {
+    console.log('state:', store.getState());
+    $counter.textContent = store.getState();
+    const $decrement = document.querySelector('[data-js="decrement"]');
+  const $increment = document.querySelector('[data-js="increment"]');
+$decrement.addEventListener('click', decrement)
+$increment.addEventListener('click', incriment)
+
+function decrement() {
+  store.dispatch({ type: 'DECREMENT'})
+}
+
+function incriment() {
+  store.dispatch({ type: 'INCREMENT'})
+}
+
+function render () {
+  $counter.textContent = store.getState()
+}
+store.subscribe(render)
+render()
+  </script>
+  <script src="test.js"></script>
+</body>
+</html> const $decrement = document.querySelector('[data-js="decrement"]');
+  const $increment = document.querySelector('[data-js="increment"]');
+$decrement.addEventListener('click', decrement)
+$increment.addEventListener('click', incriment)
+
+function decrement() {
+  store.dispatch({ type: 'DECREMENT'})
+}
+
+function incriment() {
+  store.dispatch({ type: 'INCREMENT'})
+}
+
+function render () {
+  $counter.textContent = store.getState()
+}
+store.subscribe(render)
+render()
+  </script>
+  <script src="test.js"></script>
+</body>
+</html>
