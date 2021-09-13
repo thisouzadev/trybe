@@ -1,11 +1,11 @@
 
 import React from 'react';
-import CounterContainer from './components/CounterContainer';
+import Counters from './components/Counters';
 
 function App() {
   return (
     <div>
-    <CounterContainer />
+    <Counters />
     </div>
   );
 }
