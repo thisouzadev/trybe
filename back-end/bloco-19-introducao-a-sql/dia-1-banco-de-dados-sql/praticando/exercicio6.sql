@@ -1,0 +1,1 @@
+Exercício 6 : Qual tipo de relacionamento a tabela country faz com a tabela city ?

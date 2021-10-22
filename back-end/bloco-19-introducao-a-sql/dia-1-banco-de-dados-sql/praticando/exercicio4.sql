@@ -1,0 +1,1 @@
+Exercício 4 : Analise a tabela city e encontre a tabela à qual a coluna country_id faz referência.
