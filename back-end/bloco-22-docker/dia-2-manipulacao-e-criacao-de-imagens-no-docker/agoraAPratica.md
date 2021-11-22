@@ -30,7 +30,7 @@ Para isso:
  <br/>
 
 
-Exercício 2 :
+`Exercício 2 :
 Vamos usar uma imagem disponível no DockerHub conhecida como "cowsay" (Uma vaca falante no terminal 🐮!) !
 A ideia é deixarmos a mensagem para o cowsay parametrizável, dessa forma, conseguiremos executar o comando:
     ``docker container run cowsay Muuuuuuhhh``
@@ -44,9 +44,20 @@ A ideia é deixarmos a mensagem para o cowsay parametrizável, dessa forma, cons
                ||----w |
                ||     || `
 <br/>
-1. Crie um Dockerfile utilizando a imagem chuanwen/cowsay .<br/>
+1. Crie um Dockerfile utilizando a imagem chuanwen/cowsay .
+<br/>
+`FROM chuanwen/cowsay:latest`
+<br/>
 2. Agora defina um ENTRYPOINT para a execução do comando. <br/>
 Lembre-se que com ele, diferente do CMD o comando não poderá ser sobrescrito com o docker run , porém, conseguiremos passar parâmetros ao binário, exploraremos esse recurso para poder passar a mensagem.
+ `ENTRYPOINT [ "/usr/games/cowsay" ]`
 3. Utilize o CMD para definir uma mensagem padrão.<br/>
-4. Gere uma build e execute um container baseado em sua imagem sem passar nenhum comando.<br/>
+`CMD [ "#VQV Trybe" ]`
+<br/>
+4. Gere uma build e execute um container baseado em sua imagem sem passar nenhum comando.
+<br/>
+`$ docker image build ./ -t cowsay`
+<br/>
 5. Agora execute um novo container passando sua mensagem para testar, além da mensagem você pode utilizar a opção -l para listar outros personagens disponíveis e então executar algo como docker container run cowsay -f dragon-and-cow "VQM TRYBE" , para exibir um dragão junto com a vaquinha.
+<br/>
+`$ docker container run cowsay -f moofasa "#VQV TRYBE"`
