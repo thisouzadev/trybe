@@ -1,0 +1,46 @@
+// Retorne todos os documentos da coleção 
+// filme em que o ano seja menor que 2000.
+
+db.filmes.find().sort({ titulo: -1});
+
+// pra deixar bonitinho utilizamos o pretty();
+// somente no shell
+db.filmes.find().pretty();
+
+
+db.filmes.find({ ano: { $gt: 1993, $lte: 2000 } });
+
+// db.filmes.find({ ano: { $nin: [1993, 2000] } });
+
+db.filmes.find({ 
+  $or: [
+    { ano: { $gt:2000 } }, 
+    { "avaliacao.bom": { $gte: 8 } }
+  ]
+});
+
+// Seleciona todos os documentos da coleção filmes em 
+// que o campo avaliacao do sub-documento bom é igual a 7
+
+db.filmes.find({ "avaliacao.bom": 7 });
+
+
+db.inventory.find({
+  and: [
+    { price: { $gt: 0.99, $lt: 1.99 } },
+    { or: [
+        { sale : true },
+        { qty : { $lt : 20 } }
+      ]
+    }
+  ]
+})
+
+Essa consulta seleciona todos os documentos da coleção inventory 
+em que o valor do campo price é maior que 0.99 
+e menor que 1.99 , E o valor do atributo sale é 
+igual a true , OU o valor do atributo qty é menor 
+do que 20 . Ou seja, essa expressão é equivalente 
+a (price > 0.99 E price < 1.99) (onde o E está 
+implícito na vírgula aqui { $gt: 0.99, $lt: 1.99 } ) 
+E (sale = true OU qty < 20)
