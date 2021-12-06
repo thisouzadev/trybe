@@ -1,0 +1,313 @@
+db.students.insertOne({
+  _id: 1,
+  name: "Alex",
+  turma: "13 B"
+});
+
+
+// 10, 6, 8, 7, 3, 9.
+
+db.students.updateOne(
+  { _id: 1 },
+  { 
+    $push: { scores: 10 } 
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  { 
+    $push: { scores: 6 } 
+  }
+);
+
+
+db.students.updateOne(
+  { _id: 1 },
+  { 
+    $push: { scores: { $each: [8, 7, 3, 9] } } 
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $push: {
+      projetos: {
+        nome: "Movie Card Library",
+        tecnologia: "React",
+        horas: 6
+      }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $push: {
+      projetos:
+      {
+        $each: [
+          { nome: "Movie Card Library Stateful", tecnologia: "React", horas: 4, order: 1 },
+          { nome: "Movie Card Library CRUD", tecnologia: "React", horas: 3.5, order: 2 },
+          { nome: "TrybeWallet", tecnologia: "Redux", horas: 4, order: 3 },
+          { nome: "Trivia", tecnologia: "Redux", horas: 20, order: 4 },
+          { nome: "Starwars Planet Search", tecnologia: "ContextApi + Hooks", horas: 4, order: 5 },
+          { nome: "App Receita", tecnologia: "Group project", horas: 40, order: 6, softSkills: ["ágil", "acurácia", "comunicação"] },
+        ]
+      }
+    }
+  }
+);
+
+db.students.find({ _id: 1}, { name: 1, projetos: 1});
+
+// MUDANDO DE ASSUNTO SE TA TAO BONITA
+
+db.students.insertOne(
+  {
+    _id: 2,
+    name: "Jen",
+    quizzes : [
+      { wk: 1, score : 10 },
+      { wk: 2, score : 8 },
+      { wk: 3, score : 5 },
+      { wk: 4, score : 6 }
+    ],
+    turma: "13 B"
+  }
+);
+
+
+db.students.updateOne(
+  { _id: 2 },
+  {
+    $push: {
+      quizzes: {
+         $each: [
+          { wk: 5, score: 8 },
+          { wk: 6, score: 7 },
+          { wk: 7, score: 6 }
+        ],
+      }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 2 },
+  {
+    $push: {
+      quizzes: {
+        $each: [
+          { wk: 5, score: 8 },
+          { wk: 6, score: 7 },
+          { wk: 7, score: 6 }
+        ],
+            $sort: { score: -1 },   // ordem decrescente
+            $slice: 3               // corta tudo mas mantem os 3 primeiros
+        }
+      }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $push: {
+      projetos: {
+        $each: [
+          { nome: "All for One", tecnologia: "MySql", horas: 4, order: 7 },
+          { nome: "One for All", tecnologia: "MySql", horas: 4, order: 9 },
+        ],
+        $sort: { tecnologia: 1, nome: 1 }
+      }
+    }
+  },
+);
+
+db.students.find({ _id: 1});
+
+// MUDANDO DE ASSUNTO SE TA TAO BONITA
+
+db.stores.insertMany(
+  [
+    {
+      _id: 1,
+      fruits: ["apples", "pears", "oranges", "grapes", "bananas"],
+      vegetables: ["carrots", "celery", "squash", "carrots"]
+    },
+    {
+      _id: 2,
+      fruits: ["plums", "kiwis", "oranges", "bananas", "apples"],
+      vegetables: ["broccoli", "zucchini", "carrots", "onions"]
+    }
+  ]
+);
+
+// array fruits os elementos apples e oranges. 
+// Na mesma operação também removeremos carrots do array 
+// vegetables.
+
+
+db.stores.updateMany(
+  {}, // sem filtro
+  {
+    $pull: {   // operação de remoção
+      // // podemos utilizar o $in
+      fruits: { $in: ["apples", "oranges"] },  
+      vegetables: "carrots"
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $pull: {
+      projetos: { 
+        nome: 'Movie Card Library', 
+        tecnologia: 'React', 
+        horas: 6 
+      }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $pull: {
+      projetos: { tecnologia: 'React' }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $pull: {
+      projetos: {
+        // $lte funciona como um filtro
+        horas: { $lte: 4 }
+      }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    // -1 indica que queremos remover o 1° elemento
+    $pop: { projetos: -1 } 
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    // 1 indica que queremos remover o útimo elemento
+    $pop: { projetos: 1 } 
+  }
+);
+
+
+
+
+db.inventory.insertOne({
+  _id: 1,
+  product: "polarizing_filter",
+  tags: ["electronics", "camera"]
+});
+
+
+db.inventory.updateOne(
+  { _id: 1 },
+  { $addToSet: { tags: "accessories" } }
+);
+
+db.inventory.updateOne(
+  { _id: 1 },
+  {
+    $addToSet: {
+      tags: {
+        $each: ["camera", "accessories", "camera", "photography"]
+      }
+    }
+  }
+);
+
+db.students.updateOne(
+  { _id: 1 },
+  {
+    $addToSet: {
+      projetos: {
+        $each: [
+          {
+        "order": 6,
+        "nome": "App Receita",
+        "tecnologia": "Group project",
+        "horas": 40,
+      },
+        ]
+      }
+    }
+  }
+);
+
+// adicionando as pessoas
+db.students.insertMany(
+  [
+    {
+      name: "Tobias",
+      turma: 100
+    },
+    {
+      name: "Camila",
+      turma: 101
+    }
+ 
+  ]
+);
+
+db.students.updateMany(
+  {},
+  {
+    $addToSet: {
+      projetos : {
+        $each: [
+          { nome: 'One for All', tecnologia: 'MySql', horas: 4, order: 9 },
+          { nome: 'All for One', tecnologia: 'MySql', horas: 4, order: 7 },
+          {
+            nome: 'Aggregation',
+            tecnologia: 'MongoDB Aggregate',
+            horas: 5,
+            order: 6
+          }
+        ]
+      }
+    }
+  }
+);
+
+//Vamos alterar a quantidade de horas do
+// projeto Aggregation da Camila
+
+db.students.updateOne(
+  { name: "Camila" },
+  {
+    //$[elemento] se refere a elemento como uma variável
+    $set: {
+      "projetos.$[elemento].tecnologia": "REDUX"
+    }
+  },
+  {
+    // atribuindo valor a variável no filtro do array
+    arrayFilters: [{ "elemento.tecnologia": "MySql" }]
+  }
+);
+
+
+db.students.find({name: "Camila"})
+
