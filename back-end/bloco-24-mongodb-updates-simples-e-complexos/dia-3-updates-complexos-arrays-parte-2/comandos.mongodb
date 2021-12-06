@@ -1,0 +1,7 @@
+db.students.count(
+  {
+    name: {
+      $regex: /A/i
+    }
+  }
+);
