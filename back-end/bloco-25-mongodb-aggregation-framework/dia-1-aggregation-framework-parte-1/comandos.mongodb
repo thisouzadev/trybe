@@ -1,0 +1,185 @@
+db.voos.find({
+  "empresa.nome": "AMERICAN AIRLINES"
+});
+
+db.voos.aggregate([
+    { $match: { "$empresa.nome": "AMERICAN AIRLINES" } },
+]);
+
+db.voos.aggregate([
+  { 
+    $match: {
+      "empresa.nome": "AMERICAN AIRLINES",
+      decolagens: { $lt: 10 }
+    },
+  },
+]);
+ 
+db.voos.aggregate([
+  { $match: { "empresa.nome": "AMERICAN AIRLINES" } },
+  { $count: "batatinha" }
+]);
+
+db.voos.aggregate([
+  { $match: { "empresa.nome": "AMERICAN AIRLINES" } },
+  {
+    $group: {
+      _id: "documentsCount",
+    }
+  }
+]);
+
+db.voos.aggregate([
+  {
+    $group : {
+      _id : "$empresa.nome",
+      total: {
+        $sum: "$decolagens"
+      }
+    }
+  },
+]);
+
+db.voos.aggregate([
+  { $match: { decolagens: { $gt: 1000 } } },
+  {
+    $group : {
+      _id: "$empresa.nome",
+      total: {
+        $sum: "$decolagens"
+      }
+    }
+  },
+  { $match: { total: { $lt: 5000 } } },
+  { $limit: 10 },
+  { $match: { total: { $eq: 259 } } }
+]);
+
+db.voos.aggregate([
+  {
+    $group: {
+      _id: {
+        "nomeDaEmpresa": "$empresa.nome",
+        "paisDeOrigem": "$aeroportoOrigem.pais",
+        "paisDeDestino": "$aeroportoDestino.pais",
+      },
+      qtde: { $sum: 1 }
+    }
+  }
+]);
+
+db.voos.aggregate([
+  {
+    $group: {
+      _id: {
+        "nomeDaEmpresa": "$empresa.nome",
+        "paisDeOrigem": "$aeroportoOrigem.pais",
+        "paisDeDestino": "$aeroportoDestino.pais",
+      },
+      qtde: { $sum: 1 }
+    }
+  },
+  {
+    $group: {
+      _id: "$_id.nomeDaEmpresa",
+      voos: {
+        $push: {
+          "paisDeOrigem": "$_id.paisDeOrigem",
+          "paisDeDestino": "$_id.paisDeDestino",
+          "quantidadeDeVoos": "$qtde"
+        }
+      }
+    }
+  },
+  { $sort: { "voos.paisDeOrigin": 1 }}
+]);
+
+db.voos.aggregate([
+    { $group: { _id : "$empresa.nome" } }
+]);
+
+db.voos.aggregate([
+    { $group : { _id : "$empresa.nome" } },
+    { $limit: 3 },
+    { $sort: { "_id": 1 } }
+]);
+
+db.voos.aggregate([
+  { $match: { "empresa.nome": "AMERICAN AIRLINES" } },
+  {
+    $project: {
+      _id: 0,
+      nomeDaEmpresa: "$empresa.nome",
+      paisDeOrigem: "$aeroportoOrigem.pais",
+      paisDeDestino: "$aeroportoDestino.pais",
+    }
+  }
+]);
+
+db.products.insertOne({
+    "_id" : 1,
+    "item" : "ABC1",
+    sizes: [ "S", "M", "L"]
+})
+
+db.products.find()
+
+db.products.aggregate([{ $unwind : "$sizes" }]);
+
+db.products.aggregate([
+  { $unwind : "$sizes" },
+  {
+    $match: {
+        sizes: "S"
+    }
+  }
+]);
+
+db.orders.insertMany(
+  [
+    { "_id" : 1, "item" : "almonds", "price" : 12, "quantity" : 2 },
+    { "_id" : 2, "item" : "pecans", "price" : 20, "quantity" : 1 },
+    { "_id" : 3  }
+  ]
+);
+
+db.inventory.insertMany(
+  [
+    { "_id" : 1, "sku" : "almonds", "description": "product 1", "instock" : 120 },
+    { "_id" : 2, "sku" : "bread", "description": "product 2", "instock" : 80 },
+    { "_id" : 3, "sku" : "cashews", "description": "product 3", "instock" : 60 },
+    { "_id" : 4, "sku" : "pecans", "description": "product 4", "instock" : 70 },
+    { "_id" : 5, "sku": null, "description": "Incomplete" },
+    { "_id" : 6 }
+  ]
+);
+
+db.orders.aggregate([
+  {
+    $lookup:
+    {
+      from: "inventory",
+      localField: "item",
+      foreignField: "sku",
+      as: "inventory_docs"
+    }
+  }
+]);
+
+db.orders.aggregate([
+  {
+    $lookup:
+    {
+      from: "inventory",
+      localField: "item",
+      foreignField: "sku",
+      as: "inventory_docs"
+    }
+  },
+  {
+    $project: { 
+      "inventory_docs.0.sku": 1, 
+      "inventory_docs.0.instock": 1 
+    }
+  }
+]);
