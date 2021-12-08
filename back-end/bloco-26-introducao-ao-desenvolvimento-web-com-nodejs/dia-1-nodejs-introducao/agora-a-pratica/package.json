@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "imc": "node imc.js",
+    "fatorial": "node fatorial.js",
+    "velocidade": "node velocidade.js",
+    "start": "node index.js",
+    "sorteio": "node sorteio.js",
+    "imcCalculoIMC": "node imcCalculoIMC.js",
+    "fibonacci": "node fibonacci.js"
   },
   "author": "Thiago",
   "license": "ISC",

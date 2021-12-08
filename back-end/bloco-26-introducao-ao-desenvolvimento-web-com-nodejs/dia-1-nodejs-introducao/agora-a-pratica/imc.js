@@ -1,7 +1,15 @@
-const imc = (peso, altura) => {
-  const calculoIMC = peso / Math.pow(altura, 2).toFixed(2);
-  console.log(calculoIMC, 10);
+const readline = require('readline-sync');
 
+function calculaImc () {
+  const peso = readline.questionFloat('Qual o seu peso?\n (em kg)');
+  const altura = readline.questionFloat('Qual a sua altura?\n (em cm)');
+
+  console.log(`Peso: ${peso}, Altura: ${altura}`);
+
+  const imc = peso / Math.pow(altura, 2).toFixed(2);
+
+  console.log(`IMC: ${imc}`);
+  
   if (imc < 18.5) {
     console.log('Situação: Abaixo do peso (magreza)');
     return;
@@ -31,6 +39,4 @@ const imc = (peso, altura) => {
 
 }
 
-
-
-module.exports = imc;
+calculaImc();
