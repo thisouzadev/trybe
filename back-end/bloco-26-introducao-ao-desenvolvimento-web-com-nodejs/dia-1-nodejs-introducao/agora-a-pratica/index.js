@@ -1,3 +1,17 @@
 const imc = require('./calculoIMC');
+const readlineSync = require('readline-sync');
 
-console.log(imc(90,1.80))
+const userPeso = () => {
+  return readlineSync.questionFloat("Qual seu peso?\n R: ")
+}
+
+const userAltura = () => {
+  return readlineSync.questionFloat("Qual sua altura?\n R: ");
+}
+
+const peso = userPeso();
+const altura = userAltura();
+
+
+
+console.log(imc(peso, altura))

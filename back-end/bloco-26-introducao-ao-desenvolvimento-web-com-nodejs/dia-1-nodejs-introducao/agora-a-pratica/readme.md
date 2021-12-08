@@ -8,8 +8,9 @@ Obs: Lembre-se que a altura é em metros, caso deseje usar em centímetros a con
 - Armazene o script no arquivo imc.js .
 2. Agora, permita que o script seja executado através do comando npm run imc
 - O novo script criado deve conter o comando que chama o node para executar o arquivo imc.js .
-3. Chegou a hora de tornar nosso script mais interativo! Vamos adicionar input de quem usa.
+3. Chegou a hora de tornar nosso script mais interativo! Vamos adicionar input de quem usa. 
 - Você já utilizou o pacote readline-sync para esse fim. Que tal utilizar o mesmo pacote?
+[readline-sync](https://www.npmjs.com/package/readline-sync)
 - Substitua os valores fixos de peso e altura por dados informados pela pessoa ao responder as perguntas "Qual seu peso?" e "Qual sua altura?" no terminal.
 4. Agora temos um problema: peso não é um número inteiro! Isso quer dizer que precisamos mudar um pouco a forma como solicitamos o input desse dado.
 - O pacote readline-sync possui uma função específica para tratar esses casos. Consulte a documentação do pacote e encontre o método adequado para realizar input de floats .
