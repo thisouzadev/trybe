@@ -1,0 +1,21 @@
+{
+  "name": "agora-a-pratica",
+  "version": "1.0.0",
+  "description": "fazendo os exercicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imc": "node imc.js",
+    "fatorial": "node fatorial.js",
+    "velocidade": "node velocidade.js",
+    "start": "node index.js",
+    "sorteio": "node sorteio.js",
+    "imcCalculoIMC": "node imcCalculoIMC.js",
+    "fibonacci": "node fibonacci.js"
+  },
+  "author": "Thiago",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
