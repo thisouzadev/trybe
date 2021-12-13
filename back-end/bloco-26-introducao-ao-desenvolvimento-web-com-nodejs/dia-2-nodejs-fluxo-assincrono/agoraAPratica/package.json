@@ -5,7 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "simpsom": "node simpsom.js",
+    "simpsom2": "node simpsom2.js",
+    "simpsom3": "node simpsom3.js",
+    "simpsom4": "node simpsom4.js",
+    "simpsom5": "node simpsom5.js",
+    "simpsom6": "node simpsom6.js",
+    "fizzBuzz": "node fizzBuzz.js",
+    "arrayTofile": "node arrayTofile.js",
+    "math": "node math.js",
+    "questions": "node questions.js"
   },
   "author": "thiago thiagodesouza.dev@gmail.com",
   "license": "ISC",
