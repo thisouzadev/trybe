@@ -1,0 +1,29 @@
+{
+  "name": "lectures-13-c",
+  "version": "1.0.0",
+  "description": "Este repositório armazena os códigos e scripts fornecidos durante as aulas ao vivo pelas pessoas especialistas da Trybe.",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-013-c-live-lectures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-013-c-live-lectures/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-013-c-live-lectures#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "sinon": "^12.0.1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}
