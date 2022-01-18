@@ -36,22 +36,7 @@ const serialize = (authorData) => ({
 
 // Busca todos os autores do banco.
 const getAll = async () => {
-  // const variav = connection()
-  //     .then((db) => db.collection('authors').find().toArray())
-  //         .then((authors) =>
-  //             authors.map(({ _id, firstName, middleName, lastName }) =>
-  //             getNewAuthor({
-  //                 id: _id,
-  //                 firstName,
-  //                 middleName,
-  //                 lastName,
-  //             })
-  //         )
-  //     );
-  //     console.log(variav);
-  //     return variav
   const db = await connection();
-
   return db.collection('authors').find({}).toArray();
 }
 
