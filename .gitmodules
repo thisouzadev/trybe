@@ -1,3 +1,6 @@
 [submodule "js/curso-de-js-roger-melo"]
 	path = js/curso-de-js-roger-melo
 	url = git@github.com:thisouzadev/curso-de-js-roger-melo.git
+[submodule "back-end/bloco-30-arquitetura-solid-e-orm/dia-3-orm-associations/back-end/bloco-30-arquitetura-solid-e-orm/dia-3-orm-associations/masterclass-nodejs-sql"]
+	path = back-end/bloco-30-arquitetura-solid-e-orm/dia-3-orm-associations/back-end/bloco-30-arquitetura-solid-e-orm/dia-3-orm-associations/masterclass-nodejs-sql
+	url = git@github.com:thisouzadev/trybe-exercises.git
