@@ -1,15 +1,13 @@
-import json
+from abc import ABC, abstractmethod
 from csv import DictWriter
+import json
 
 
-class SalesReport():
+class SalesReport(ABC):
     def __init__(self, export_file):
-        self.export_file = export_file + '.json'
+        self.export_file = export_file
 
     def build(self):
-        """ Aqui colocamos a lógica para a entidade 'se criar',
-        ou seja, criar um relatório imprimível. Por simplicidade,
-        vamos omitir essa lógica nos exemplos! """
         return [{
                 'Coluna 1': 'Dado 1',
                 'Coluna 2': 'Dado 2',
@@ -21,12 +19,20 @@ class SalesReport():
                 'Coluna 3': 'Dado C'
                 }]
 
+    @abstractmethod
     def serialize(self):
-        with open(self.export_file, 'w') as file:
+        raise NotImplementedError
+
+
+class SalesReportJSON(SalesReport):
+    def serialize(self):
+        with open(self.export_file + '.json', 'w') as file:
             json.dump(self.build(), file)
 
-    def serialize_csv(self):
-        with open('meu_relatorio.csv', 'w') as file:
+
+class SalesReportCSV(SalesReport):
+    def serialize(self):
+        with open(self.export_file + '.csv', 'w') as file:
             headers = ["Coluna 1", "Coluna 2", "Coluna 3"]
             csv_writer = DictWriter(file, headers)
             csv_writer.writeheader()
@@ -35,6 +41,8 @@ class SalesReport():
 
 
 # Para testar
-relatorio_de_vendas = SalesReport('meu_relatorio')
+relatorio_de_vendas = SalesReportJSON('meu_relatorio')
 relatorio_de_vendas.serialize()
-relatorio_de_vendas.serialize_csv()
+
+relatorio_de_compras = SalesReportCSV('meu_relatorio')
+relatorio_de_compras.serialize()
