@@ -1,0 +1,43 @@
+Antes de iniciar o código, certifique-se que você possui funcionando as seguintes tecnologias/ferramentas:
+
+Python;
+
+Telnet;
+
+Netcat (nc);
+
+cURL;
+
+Wget.
+
+Telnet
+MacOS:
+
+$ brew install telnet
+
+
+Linux já vem instalado por padrão.
+
+Netcat
+O Netcat já vem instalado por padrão.
+
+cURL
+O cURL já vem instalado por padrão. Certifique-se de que seu computador o possui funcionando com o seguinte comando:
+
+$ curl --version
+Wget
+MacOS:
+
+$ brew install wget
+Ubuntu/Debian:
+
+$ apt-get install wget
+
+
+
+
+
+documentação SocketServer do python
+
+https://docs.python.org/3/library/socketserver.html
+
