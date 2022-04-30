@@ -12,4 +12,3 @@ if __name__ == "__main__":
     with TCPServer(server_address, TCPHandler) as server:
         print("Server TCP ativo")
         server.serve_forever()
-
