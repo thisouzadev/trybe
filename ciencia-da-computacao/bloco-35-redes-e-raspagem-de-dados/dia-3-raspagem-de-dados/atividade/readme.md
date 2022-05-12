@@ -1,0 +1,1 @@
+mongoimport --db=library --jsonArray --file=books.json   

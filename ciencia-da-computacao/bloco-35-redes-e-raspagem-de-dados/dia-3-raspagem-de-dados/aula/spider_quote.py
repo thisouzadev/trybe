@@ -9,7 +9,7 @@ def fetch_content(url, timeout=1):
         response.raise_for_status()
     except (requests.HTTPError, requests.ReadTimeout):
         return ""
-    
+
     return response.text
 
 
@@ -29,6 +29,7 @@ def extractor_quotes(text):
 
     return quotes
 
+
 def get_all_quotes():
     base_url = "http://quotes.toscrape.com"
     next_page = "/"
@@ -37,7 +38,9 @@ def get_all_quotes():
         content = fetch_content(base_url + next_page)
         quotes.extend(extractor_quotes(content))
 
-        next_page = parsel.Selector(content).css("li.next > a::attr(href)").get()
+        next_page = parsel.Selector(content).css(
+            "li.next > a::attr(href)"
+            ).get()
 
     return quotes
 
