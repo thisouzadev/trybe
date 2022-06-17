@@ -84,7 +84,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-3: _Jest - Simulando comportamentos_
 - [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/thisouzadev/fundamentos-jest-testes-assincronos)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 11: IntroduÃ§Ã£o - React
 
@@ -140,7 +140,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 19-1: _[Projeto - App de Receitas](https://github.com/thisouzadev/front-end-project-recipes-app)_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
@@ -237,7 +237,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 34-1: _[Projeto - Trybeer V2](https://github.com/thisouzadev/backend-delivery-app-fullstack-tcc)_
 
-## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
+## Ciéncia da Computação :white_check_mark:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
