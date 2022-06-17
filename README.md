@@ -1,38 +1,38 @@
 # Trybe
 
-Este repositÃ³rio contÃ©m todas as atividades de aprendizagem desenvolvidas por _[Thiago Souza](https://www.linkedin.com/in/thisouzadev/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositorio contém todas as atividades de aprendizagem desenvolvidas por _[Thiago Souza](https://www.linkedin.com/in/thisouzadev/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe Ã© uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa sÃ³ paga quando conseguir um bom trabalho."_
+_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa é paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introduÃ§Ã£o ao desenvolvimento de software, front-end, back-end, ciÃªncia da computaÃ§Ã£o, engenharia de software, metodologias Ã¡geis e habilidades comportamentais.
+O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introduÃ§Ã£o ao desenvolvimento de software, front-end, back-end, ciÃªncia da computação, engenharia de software, metodologias Ageis e habilidades comportamentais.
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: IntroduÃ§Ã£o - Unix & Shell
+##### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Shell- Part 1_
 - [x] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
-- [x] 2-1: _O que Ã© e para que serve?_
+- [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: IntroduÃ§Ã£o - HTML & CSS
 
-- [x] 3-1: _HTML & CSS - Estruturas de pÃ¡gina_
+- [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [x] 3-4: _HTML SemÃ¢ntico_
+- [x] 3-4: _HTML Semántico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/thisouzadev/fundamentos-projeto-lessons-learned)_
 
 ##### Bloco 4: IntroduÃ§Ã£o - JavaScript
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
-- [x] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- [x] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/thisouzadev/fundamentos-playground-functions)_
 
 ##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
@@ -54,13 +54,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - PÃ¡gina trybewarts](https://github.com/thisouzadev/fundamentos-projeto-trybewarts)_
+- [x] 6-6: _[Projeto - Página trybewarts](https://github.com/thisouzadev/fundamentos-projeto-trybewarts)_
 
 ##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Objects_
-- [x] 7-3: _Testes unitÃ¡rios em JavaScript_
+- [x] 7-3: _Testes unitários em JavaScript_
 - [x] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios](https://github.com/thisouzadev/fundamentos-testes-unitarios)_
 
 ##### Bloco 8: JavaScript ES6
@@ -73,16 +73,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [x] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Promises_
 - [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/thisouzadev/fundamentos-shopping-cart)_
 
 ##### Bloco 10: Jest
 
 - [x] 10-1: _Primeiros passos no Jest_
-- [x] 10-2: _Jest - Testes AssÃ­ncronos_
+- [x] 10-2: _Jest - Testes Assíncronos_
 - [x] 10-3: _Jest - Simulando comportamentos_
-- [x] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking](https://github.com/thisouzadev/fundamentos-jest-testes-assincronos)_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/thisouzadev/fundamentos-jest-testes-assincronos)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -95,7 +95,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 12: React
 
 - [x] 12-1: _Components com estado_
-- [x] 12-2: _Eventos e formulÃ¡rios no React_
+- [x] 12-2: _Eventos e formulários no React_
 - [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/thisouzadev/front-end-movie-cards-library-stateful)_
 
 ##### Bloco 13: React
@@ -105,9 +105,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 13-3: _React Router_
 - [x] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/thisouzadev/front-end-movie-card-library-crud)_
 
-##### Bloco 14: Metodologias Ãgeis
+##### Bloco 14: Metodologias Ágeis
 
-- [x] 14-1: _Metodologias Ãgeis_
+- [x] 14-1: _Metodologias Ágeis_
 - [x] 14-2: _[Projeto - Frontend Online Store](https://github.com/thisouzadev/front-end-project-online-store)_
 
 ##### Bloco 15: Testes em React
@@ -118,11 +118,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 16: IntroduÃ§Ã£o ao Redux
 
-- [x] 16-1: _IntroduÃ§Ã£o ao Redux_
+- [x] 16-1: _Introdução ao Redux_
 - [x] 16-2: _React com Redux - Parte 1_
 - [x] 16-3: _React com Redux - PrÃ¡tica_
 - [x] 16-4: _React com Redux - Parte 2_
-- [x] 16-5: _Testes sÃ­ncronos com React-Redux_
+- [x] 16-5: _Testes síncronos com React-Redux_
 - [x] 16-6: _[Projeto - Tabela com filtros de dados](https://github.com/thisouzadev/front-end-project-trybewallet)_
 
 ##### Bloco 17: Projeto React
@@ -142,53 +142,53 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: IntroduÃ§Ã£o - Bancos de dados relacionais
+##### Bloco 20: Introdução - Bancos de dados relacionais
 
 - [x] 20-1: _Banco de dados SQL_
 - [x] 20-2: _Encontrando dados em um banco de dados_
-- [x] 20-3: _Filtrando dados de forma especÃ­fica_
+- [x] 20-3: _Filtrando dados de forma específica_
 - [x] 20-4: _xManipulando tabelas_
-- [x] 20-5: _[Projeto - All For One]()_
+- [x] 20-5: _[Projeto - All For One](https://github.com/thisouzadev/back-end-mysql-all-for-one)_
 
 ##### Bloco 21: Bancos de dados relacionais
 
 - [x] 21-1: _FunÃ§Ãµes mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs e UNIONs_
 - [x] 21-3: _Stored Routines & Subqueries_
-- [x] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-4: _[Projeto - Vocabulary Booster](https://github.com/thisouzadev/back-end-mysql-vocabulary-booster)_
 
 ##### Bloco 22: Bancos de dados relacionais
 
 - [x] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [x] 22-2: _NormalizaÃ§Ã£o, Formas Normais e Dumps_
 - [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [x] 22-3: _[Projeto - One For All]()_
+- [x] 22-3: _[Projeto - One For All](https://github.com/thisouzadev/back-end-mysql-one-for-all)_
 
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
 - [x] 23-1: _MongoDB - IntroduÃ§Ã£o_
 - [x] 23-2: _Filter Operators_
-- [x] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-3: _[Projeto - Data Flights](https://github.com/thisouzadev/back-end-mongodb-dataflights)_
 
 ##### Bloco 24: Updates
 
 - [x] 24-1: _Updates Simples_
 - [x] 24-2: _Updates Complexos - Arrays - Parte 1_
 - [x] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [x] 24-4: _[Projeto - Commerce]()_
+- [x] 24-4: _[Projeto - Commerce](https://github.com/thisouzadev/back-end-mongodb-commerce)_
 
 ##### Bloco 25: Aggregation Framework
 
 - [x] 25-1: _Aggregation Framework - Part 1_
 - [x] 25-2: _Aggregation Framework - Part 2_
-- [x] 25-3: _[Projeto - Aggregations]()_
+- [x] 25-3: _[Projeto - Aggregations](https://github.com/thisouzadev/back-end-mongodb-aggregations)_
 
 ##### Bloco 26: Intro - NodeJSx
 
 - [x] 26-1: _NodeJS - IntroduÃ§Ã£o_
 - [x] 26-2: _NodeJS - Fluxo AssÃ­ncrono_
 - [x] 26-3: _NodeJS - Arquitetura_
-- [x] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 26-4: _[Projeto - A CLI of Ice and Fire](https://github.com/thisouzadev/back-end-project-talker-manager)_
 
 ##### Bloco 27: NodeJS
 
@@ -200,19 +200,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
 - [x] 28-2: _Arquitetura web - Rest e Restful_
-- [x] 28-3: _[Projeto - Store Manager]()_
+- [x] 28-3: _[Projeto - Store Manager](https://github.com/thisouzadev/back-end-store-manager)_
 
 ##### Bloco 29: NodeJS
 
 - [x] 29-1: _NodeJS - JWT - (JSON Web Token)_
 - [x] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [x] 29-3: _[Projeto - Cookmaster V2]()_
+- [x] 29-3: _[Projeto - Cookmaster V2](https://github.com/thisouzadev/back-end-cookmaster)_
 
 ##### Bloco 30: IntroduÃ§Ã£o - Deploy
 
 - [x] 30-1: _Infraestrutura - Deploy com Heroku_
 - [x] 30-2: _Deploy - Gerenciadores de Processos_
-- [x] 30-3: _[Projeto - Stranger Things]()_
+- [x] 30-3: _[Projeto - Stranger Things backend](https://github.com/thisouzadev/back-end-stranget-things-backend-heroku)_
+- [ ] 30-3: _[Projeto - Stranger Things frontend](https://github.com/thisouzadev/back-end-stranger-things-frontend-heroku)_
 
 ##### Bloco 31: Projeto
 
@@ -224,7 +225,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 32-2: _ORM - Interface da aplicaÃ§Ã£o com o banco de dados_
 - [x] 32-3: _Arquitetura de Software - DDD_
 - [x] 32-4: _Boas prÃ¡ticas na escrita de testes_
-- [x] 32-3: _[Projeto - API de Blogs]()_
+- [x] 32-3: _[Projeto - API de Blogs](https://github.com/thisouzadev/back-end-blogs-api)_
 
 ##### Bloco 33: Sockets
 
@@ -234,23 +235,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 34: Projeto
 
-- [x] 34-1: _[Projeto - Trybeer V2]()_
+- [x] 34-1: _[Projeto - Trybeer V2](https://github.com/thisouzadev/backend-delivery-app-fullstack-tcc)_
 
 ## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
 
-##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
+##### Bloco 35: Introdução - Ciência da Computação
 
 - [x] 35-1: _Arquitetura de Computadores_
 - [x] 35-2: _Arquitetura de redes_
 - [x] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
-- [x] 35-4: _[Projeto - Explorando os protocolos]()_
+- [x] 35-4: _[Projeto - Explorando os protocolos](https://github.com/thisouzadev/ciencia-da-computacao-job-insights)_
 
 ##### Bloco 36: Python
 
 - [x] 35-1: _Aprendendo Python_
 - [x] 35-2: _Testes e ExceÃ§Ãµes_
-- [x] 35-3: _Entrada e SaÃ­da de dados_
-- [x] 36-4: _Entrada e SaÃ­da de dados_
-- [x] 35-5: _[Projeto - Tech news]()_
+- [x] 35-3: _Entrada e Saída de dados_
+- [x] 36-4: _Entrada e Saída de dados_
+- [x] 35-5: _[Projeto - Tech news](https://github.com/thisouzadev/ciencia-da-computacao-tech-news)_
 
 # [...]
