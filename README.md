@@ -19,7 +19,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: IntroduÃ§Ã£o - HTML & CSS
+##### Bloco 3: Introdução - HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semántico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/thisouzadev/fundamentos-projeto-lessons-learned)_
 
-##### Bloco 4: IntroduÃ§Ã£o - JavaScript
+##### Bloco 4: Introdução - JavaScript
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
@@ -35,7 +35,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/thisouzadev/fundamentos-playground-functions)_
 
-##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
+##### Bloco 5: Introdução - JavaScript - Projetos
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
@@ -56,7 +56,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [x] 6-6: _[Projeto - Página trybewarts](https://github.com/thisouzadev/fundamentos-projeto-trybewarts)_
 
-##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
+##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Objects_
@@ -86,7 +86,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Front-end :white_check_mark:
 
-##### Bloco 11: IntroduÃ§Ã£o - React
+##### Bloco 11: Introdução - React
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
@@ -116,7 +116,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-2: _Testando React com a React Testing Library - Parte 2_
 - [x] 15-3: _[Projeto - Testes em React](https://github.com/thisouzadev/front-end-project-react-testing-library)_
 
-##### Bloco 16: IntroduÃ§Ã£o ao Redux
+##### Bloco 16: Introdução ao Redux
 
 - [x] 16-1: _Introdução ao Redux_
 - [x] 16-2: _React com Redux - Parte 1_
@@ -164,9 +164,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [x] 22-3: _[Projeto - One For All](https://github.com/thisouzadev/back-end-mysql-one-for-all)_
 
-##### Bloco 23: IntroduÃ§Ã£o - NoSQL
+##### Bloco 23: Introdução - NoSQL
 
-- [x] 23-1: _MongoDB - IntroduÃ§Ã£o_
+- [x] 23-1: _MongoDB - Introdução_
 - [x] 23-2: _Filter Operators_
 - [x] 23-3: _[Projeto - Data Flights](https://github.com/thisouzadev/back-end-mongodb-dataflights)_
 
@@ -208,7 +208,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 29-2: _NodeJS - Upload de arquivos com Multer_
 - [x] 29-3: _[Projeto - Cookmaster V2](https://github.com/thisouzadev/back-end-cookmaster)_
 
-##### Bloco 30: IntroduÃ§Ã£o - Deploy
+##### Bloco 30: Introdução - Deploy
 
 - [x] 30-1: _Infraestrutura - Deploy com Heroku_
 - [x] 30-2: _Deploy - Gerenciadores de Processos_
@@ -221,7 +221,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 32: Arquitetura de Softwarex
 
-- [x] 32-1: _Arquitetura - PrincÃ­pios SOLID_
+- [x] 32-1: _Arquitetura - Princípios SOLID_
 - [x] 32-2: _ORM - Interface da aplicaÃ§Ã£o com o banco de dados_
 - [x] 32-3: _Arquitetura de Software - DDD_
 - [x] 32-4: _Boas prÃ¡ticas na escrita de testes_
