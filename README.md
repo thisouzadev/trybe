@@ -127,7 +127,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 17: Projeto React
 
-- [x] 17-1: _[Projeto - Jogo de Trivia](https://github.com/thisouzadev/front-end-trivia-react-redux)_
+- [x] 17-1: _[Projeto - Jogo de Trivia]([https://github.com/thisouzadev/front-end-trivia-react-redux](https://github.com/thisouzadev/front-end-trivia-react-redux/tree/main-group-29-css))_
 
 ##### Bloco 18: React & Context API
 
